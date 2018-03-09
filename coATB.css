@@ -222,3 +222,12 @@ div.ContentBoxItemContent[contenteditable="true"]{
   color: rgba(0,0,0,.79);
 }
 
+div.ScreenPortfolioView{
+  display: block;
+  position:absolute;
+}
+div.elmsPortfolio{
+  display: block;
+  position:absolute;
+}
+

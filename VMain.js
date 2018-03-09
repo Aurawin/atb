@@ -1,5 +1,5 @@
 coATB.App.Components.MainView = {
-  Version        : new Version(2018,3,8,4),
+  Version        : new Version(2018,3,9,5),
   Title          : new Title("ATB MainView","Main"),
   Vendor         : new Vendor("Aurawin", "Copyright (&copy;) 2018.  All rights reserved.", [{'REAL-TIME END-USE AWARE INTERACTIVE SEARCH UTILIZING LAYERED APPROACH' : 7720843}, {'SYSTEMS AND APPARATUSES FOR SEAMLESS INTEGRATION OF USER, CONTEXTUAL, AND SOCIALLY AWARE SEARCH UTILIZING LAYERED APPROACH' : 7860852} ]),
   Header         : coAppKit.Dependencies.Create(coATB.App,'/atb/VMain.js',coAppKit.PreLoaded),
@@ -33,6 +33,7 @@ coATB.App.Components.MainView = {
     v.Showcase.setHeight(250);
     v.Showcase.Visible=true;
 
+
     v.Showcase.PageItemPosition=coAppUI.Absolute;
     v.Showcase.PageClientPosition=coAppUI.Relative;
     v.Showcase.PageContentPosition=coAppUI.Absolute;
@@ -40,6 +41,7 @@ coATB.App.Components.MainView = {
 
     var sci=v.Showcase.Items.Face=v.Showcase.Items.addItem();
     sci.Category="Me";
+    sci.Button.setCaption("Intro");
     sci.Image = coAppUI.App.Components.Image.Create(
       "Image",
       v.Class+"Image",
@@ -55,6 +57,7 @@ coATB.App.Components.MainView = {
 
     var sci=v.Showcase.Items.Blog=v.Showcase.Items.addItem();
     sci.Category="My Blog";
+    sci.Button.setCaption("Blog");
     sci.Blog=coATB.App.Components.BlogView.Create(sci.Page);
 
     return v;
